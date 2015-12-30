@@ -28,7 +28,7 @@ func main() {
 	var f interface{}
 	err := yaml.Unmarshal(data, &f)
 	if err != nil {
-		fmt.Printf("YAML error: %s\n", err)
+		fmt.Printf("YAML error in %s: %s\n", inFile, err)
 		os.Exit(1)
 	}
 
