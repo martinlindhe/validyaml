@@ -7,7 +7,7 @@ This tool simply exposes the super fast [gopkg.in/yaml.v2](https://gopkg.in/yaml
 
 # Installation
 
-    go install github.com/martinlindhe/validyaml
+    go get -u github.com/martinlindhe/validyaml
 
 
 # Usage
