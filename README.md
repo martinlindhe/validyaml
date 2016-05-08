@@ -2,8 +2,6 @@
 
 Command line tool to validate YAML syntax of input files.
 
-This tool simply exposes the super fast [gopkg.in/yaml.v2](https://gopkg.in/yaml.v2) to the command line.
-
 
 # Installation
 
@@ -12,11 +10,14 @@ This tool simply exposes the super fast [gopkg.in/yaml.v2](https://gopkg.in/yaml
 
 # Usage
 
+Exit code will be 0 if file is good.
+
     validyaml file.yaml
 
     OK: file.yaml
 
-To pretty print the result:
+
+# Pretty-print
 
     validyaml -p file.yaml
 
