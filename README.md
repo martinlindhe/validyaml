@@ -1,6 +1,7 @@
 # About
 
-Command line tool to validate YAML syntax of input files.
+Command line tool to validate and pretty-print YAML syntax of input
+files, taking advantage of [gopkg.in/yaml.v2](https://gopkg.in/yaml.v2).
 
 
 # Installation
