@@ -1,5 +1,7 @@
 # About
 
+[![gorelease](https://dn-gorelease.qbox.me/gorelease-download-blue.svg)](https://gobuild.io/martinlindhe/validyaml/master)
+
 Command line tool to validate and pretty-print YAML syntax of input
 files, taking advantage of [gopkg.in/yaml.v2](https://gopkg.in/yaml.v2).
 
