@@ -10,8 +10,9 @@ import (
 )
 
 var (
-	inFile = kingpin.Arg("file", "YAML file").Required().ExistingFile()
-	pretty = kingpin.Flag("pretty", "Pretty print result").Short('p').Bool()
+	inFile = kingpin.Arg("file", "YAML file.").Required().ExistingFile()
+	pretty = kingpin.Flag("pretty", "Pretty print result.").Short('p').Bool()
+	quiet  = kingpin.Flag("quiet", "Don't output on success.").Short('q').Bool()
 )
 
 func main() {
@@ -37,6 +38,8 @@ func main() {
 		fmt.Printf(string(b))
 
 	} else {
-		fmt.Println("OK:", *inFile)
+		if !*quiet {
+			fmt.Println("OK:", *inFile)
+		}
 	}
 }
