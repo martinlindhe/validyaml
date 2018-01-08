@@ -1,34 +1,38 @@
 # About
 
-[![gorelease](https://dn-gorelease.qbox.me/gorelease-download-blue.svg)](https://gobuild.io/martinlindhe/validyaml/master)
-
 Command line tool to validate and pretty-print YAML syntax of input
-files, taking advantage of [gopkg.in/yaml.v2](https://gopkg.in/yaml.v2).
+files.
 
 
-# Installation
+## Installation
+
+Windows and macOS binaries are available under [Releases](https://github.com/martinlindhe/validyaml/releases)
+
+Or install from source:
 
     go get -u github.com/martinlindhe/validyaml
 
 
-# Usage
+## Usage
 
 Exit code will be 0 if file is good.
 
-    validyaml file.yaml
-
+    $ validyaml file.yaml
     OK: file.yaml
 
+    $ curl http://site.com/file.yaml | validyaml
+    OK: -
 
-# Pretty-print
 
-    validyaml -p file.yaml
+## Pretty-print
+
+    $ validyaml -p file.yaml
 
     list:
       one: 1
       two: 2
 
 
-# License
+## License
 
 Under [MIT](LICENSE)
